@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>education</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexslider.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.rateyo.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.mmenu.all.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inner-page-style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body itemscope itemtype="http://schema.org/AboutPage">
+	<div id="page" class="site">
+		
+		<!-- Header Close -->
+		<div class="banner">
+			<div class="owl-four owl-carousel">
+				<img src="{{ animal.image }}" alt="Image of Bannner">
+			</div>
+			<div class="container" itemprop="description">
+				<h1>{{animal.name}}</h1>
+			</div>
+			 <div id="owl-four-nav" class="owl-nav"></div>
+		</div>
+
+		<section class="about-upper-section" itemprop="mainContentofPage">
+			<div class="container">
+				<article class="who-we-are">
+					<h2 class="top-heading">{{ animal.name }}</h2>
+					<p>{{ animal.fact }}</p>
+
+				</article>
+				<div class="our-story">
+					<h2 class="top-heading">Details</h2>
+					<ul>
+						<li><i class="fas fa-chalkboard-teacher"></i> <a href="#">Location: {{animal.location}}</a></li>
+						<li><i class="fas fa-graduation-cap"></i> <a href="#">Prey: {{animal.prey}}</a></li>
+						<li><i class="fas fa-book-open"></i> <a href="#">Habitat: {{animal.habitat}}</a></li>
+						<li><i class="fas fa-users"></i> <a href="#">Population: {{animal.population}}</a></li>
+						<li><i class="fas fa-users"></i> <a href="#">Weight: {{animal.weight}}</a></li>
+						<li><i class="fas fa-users"></i> <a href="#">Lifespan: {{animal.lifespan}}</a></li>
+						<li><i class="fas fa-users"></i> <a href="#">Speed: {{animal.speed}}</a></li>
+						<li><i class="fas fa-users"></i> <a href="#">Color: {{animal.color}}</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		
+		
+	</div>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/lightbox.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.rateyo.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mmenu.all.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

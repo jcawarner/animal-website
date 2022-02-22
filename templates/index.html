@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>education</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/lightbox.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexslider.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.rateyo.css') }}"/>
+	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/inner-page-style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+	
+		
+		<div class="banner">
+			<div class="owl-four owl-carousel" itemprop="image">
+				<img src="{{ animal.image }}" alt="Image of Bannner">
+			</div>
+			<div class="container" itemprop="description">
+				<h1>{{animal.name}}</h1>
+				<h3>{{ animal.fact }}</h3>
+			</div>
+			 <div id="owl-four-nav" class="owl-nav"></div>
+		</div>
+		
+		
+		<div class="page-heading">
+			<div class="container">
+				<h2>Cool Animals</h2>
+			</div>
+		</div>
+		<!-- Popular courses End -->
+		<div class="learn-courses">
+			<div class="container">
+				<div class="courses">
+					<div class="owl-one owl-carousel">
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="{{ animal_1.image }}" alt="courses picture"></div>
+								<a href="{{url_for('animal_details', animal_id=animal_1.id )}}" class="learn-desining-banner" itemprop="name">{{ animal_1.name }}</a>
+							<div class="box-body" itemprop="description">
+								<p>{{ animal_1.fact }}</p>
+								<section itemprop="time">
+									<p><span>Location:</span> {{ animal_1.location }}</p>
+									<p><span>Habitat:</span> {{ animal_1.habitat }}</p>
+									<p><span>Population:</span> {{ animal_1.population }}</p>
+									<p><span>Weight:</span> {{ animal_1.weight }}</p>
+									<p><span>LifeSpan:</span> {{ animal_1.lifespan }}</p>
+									<p><span>Speed:</span> {{ animal_1.speed }}</p>
+									<p><span>Color:</span> {{ animal_1.color }}</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="{{ animal_2.image }}" alt="courses picture"></div>
+								<a href="{{url_for('animal_details', animal_id=animal_2.id )}}" class="learn-desining-banner" itemprop="name">{{ animal_2.name }}</a>
+							<div class="box-body" itemprop="description">
+								<p>{{ animal_2.fact }}</p>
+								<section itemprop="time">
+									<p><span>Location:</span> {{ animal_2.location }}</p>
+									<p><span>Habitat:</span> {{ animal_2.habitat }}</p>
+									<p><span>Population:</span> {{ animal_2.population }}</p>
+									<p><span>Weight:</span> {{ animal_2.weight }}</p>
+									<p><span>LifeSpan:</span> {{ animal_2.lifespan }}</p>
+									<p><span>Speed:</span> {{ animal_2.speed }}</p>
+									<p><span>Color:</span> {{ animal_2.color }}</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="{{ animal_3.image }}" alt="courses picture"></div>
+								<a href="{{url_for('animal_details', animal_id=animal_3.id )}}" class="learn-desining-banner" itemprop="name">{{ animal_3.name }}</a>
+							<div class="box-body" itemprop="description">
+								<p>{{ animal_3.fact }}</p>
+								<section itemprop="time">
+									<p><span>Location:</span> {{ animal_3.location }}</p>
+									<p><span>Habitat:</span> {{ animal_3.habitat }}</p>
+									<p><span>Population:</span> {{ animal_3.population }}</p>
+									<p><span>Weight:</span> {{ animal_3.weight }}</p>
+									<p><span>LifeSpan:</span> {{ animal_3.lifespan }}</p>
+									<p><span>Speed:</span> {{ animal_3.speed }}</p>
+									<p><span>Color:</span> {{ animal_3.color }}</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
+							<div class="img-wrap" itemprop="image"><img src="{{ animal_4.image }}" alt="courses picture"></div>
+								<a href="{{url_for('animal_details', animal_id=animal_4.id )}}" class="learn-desining-banner" itemprop="name">{{ animal_4.name }}</a>
+							<div class="box-body" itemprop="description">
+								<p>{{ animal_4.fact }}</p>
+								<section itemprop="time">
+									<p><span>Location:</span> {{ animal_4.location }}</p>
+									<p><span>Habitat:</span> {{ animal_4.habitat }}</p>
+									<p><span>Population:</span> {{ animal_4.population }}</p>
+									<p><span>Weight:</span> {{ animal_4.weight }}</p>
+									<p><span>LifeSpan:</span> {{ animal_4.lifespan }}</p>
+									<p><span>Speed:</span> {{ animal_4.speed }}</p>
+									<p><span>Color:</span> {{ animal_4.color }}</p>
+								</section>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Learn courses End -->
+		<section class="whyUs-section">
+			<div class="container">
+				<div class="featured-points">
+					<ul>
+						<li><i class="fas fa-book"></i> Details of Animals</li>
+						<li><i class="fas fa-money-check-alt"></i>Locations and Habitats</li>
+						<li><i class="fas fa-chalkboard-teacher"></i> Weight and Size</li>
+						<li> <i class="fas fa-book"></i> Speed and Color</li>
+					</ul>
+				</div>
+				<div class="whyus-wrap">
+					<h1>Learn about Animals</h1>
+					<p itemprop="description">Scroll through this fun website to learn more about all the amazing different kind of animals.  </p>
+
+					<a href="#" class="read-more-btn">read more</a>
+				</div>
+			</div>
+		</section>
+		<!-- Closed WhyUs section -->
+		<section class="page-heading">
+			<div class="container">
+				<h2>gallery</h2>
+			</div>
+		</section>
+		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_1.id )}}">
+					<img src="{{ gallery_1.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_2.id )}}">
+					<img src="{{ gallery_2.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_3.id )}}">
+					<img src="{{ gallery_3.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_4.id )}}">
+					<img src="{{ gallery_4.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_5.id )}}">
+					<img src="{{ gallery_5.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_6.id )}}">
+					<img src="{{ gallery_6.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_7.id )}}">
+					<img src="{{ gallery_7.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_8.id )}}">
+					<img src="{{ gallery_8.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_9.id )}}">
+					<img src="{{ gallery_9.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_10.id )}}">
+					<img src="{{ gallery_10.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_11.id )}}">
+					<img src="{{ gallery_11.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_12.id )}}">
+					<img src="{{ gallery_12.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_13.id )}}">
+					<img src="{{ gallery_13.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_14.id )}}">
+					<img src="{{ gallery_14.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_15.id )}}">
+					<img src="{{ gallery_15.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_16.id )}}">
+					<img src="{{ gallery_16.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_17.id )}}">
+					<img src="{{ gallery_17.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_18.id )}}">
+					<img src="{{ gallery_18.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_19.id )}}">
+					<img src="{{ gallery_19.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_20.id )}}">
+					<img src="{{ gallery_20.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_21.id )}}">
+					<img src="{{ gallery_21.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_22.id )}}">
+					<img src="{{ gallery_22.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_23.id )}}">
+					<img src="{{ gallery_23.image }}" alt="gallery-images">
+				</a>
+			</div>
+			<div class="gallery-img-wrap">
+				<a href="{{url_for('animal_details', animal_id=gallery_24.id )}}">
+					<img src="{{ gallery_24.image }}" alt="gallery-images">
+				</a>
+			</div>
+		</section>
+		<!-- End of gallery Images -->
+		
+		<!-- End of Query Section -->
+		<footer class="page-footer" itemprop="footer" itemscope itemtype="http://schema.org/WPFooter">
+			<div class="footer-first-section">
+				<div class="container">
+					<div class="box-wrap" itemprop="about">
+						<header>
+							<h1>about</h1>
+						</header>
+						<p>Edulab is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
+
+						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></h4>
+						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
+						<h4><a href=""><i class="fas fa-map-marker-alt"></i>Gongabu, Kathmandu, Nepal</a></h4>
+					</div>
+
+					<div class="box-wrap">
+						<header>
+							<h1>links</h1>
+						</header>
+						<ul>
+							<li><a href="#">Teacher</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Courses</a></li>
+						</ul>
+					</div>
+
+					<div class="box-wrap">
+						<header>
+							<h1>recent courses</h1>
+						</header>
+						<div class="recent-course-wrap">
+							<img src="{{ url_for('static', filename='images/ui-ux.jpg') }}" alt="Ui/Ux Designing">
+							<a href=""><div class="course-name">
+								<h3>UI/UX Designer courses</h3>
+								<p><span>$50</span> $40</p>
+							</div></a>
+						</div>
+						<div class="recent-course-wrap">
+							<img src="{{ url_for('static', filename='images/ui-ux.jpg') }}" alt="Ui/Ux Designing">
+							<a href=""><div class="course-name">
+								<h3>UI/UX Designer courses</h3>
+								<p><span>$50</span> $40</p>
+							</div></a>
+						</div>
+					</div>
+
+					<div class="box-wrap">
+						<header>
+							<h1>quick contact</h1>
+						</header>
+						<section class="quick-contact">
+							<input type="email" name="email" placeholder="Your Email*">
+							<textarea placeholder="Type your message*"></textarea>
+							<button>send message</button>
+						</section>
+					</div>
+
+				</div>
+			</div>
+			<!-- End of box-Wrap -->
+			<div class="footer-second-section">
+				<div class="container">
+					<hr class="footer-line">
+					<ul class="social-list">
+						<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+						<li><a href=""><i class="fab fa-skype"></i></a></li>
+						<li><a href=""><i class="fab fa-youtube"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					</ul>
+					<hr class="footer-line">
+				</div>
+			</div>
+			<div class="footer-last-section">
+				<div class="container">
+					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+				</div>
+			</div>
+		</footer>
+
+		
+
+	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/lightbox.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.js ') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.rateyo.js') }}"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
